@@ -19,7 +19,7 @@ end
 
 def assign_rooms(names)
   room = 1
-  names.each do |names_array|
+  names.each_with_index do |names_array, index|
   
   puts "Hello, " + names_array + "! You'll be assigned to room #{room}!"
   room +=1
